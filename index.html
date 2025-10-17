@@ -12,10 +12,11 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
+            font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+            background: radical-gradient(circle at top left, #0f172a, #1e293b);
+            color: #f1f5f9;
             line-height: 1.6;
+            text-align: center
         }
         
         .container {
@@ -26,7 +27,7 @@
         
         /* Header avec Logo */
         header {
-            background: white;
+            background: 111827;
             padding: 20px 30px;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -146,67 +147,7 @@
         }
         
         /* Section des structures moléculaires */
-        .structures-showcase {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            margin-bottom: 30px;
-        }
-        
-        .structures-showcase h2 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2em;
-        }
-        
-        .structure-image-container {
-            background: #f8f9fa;
-            border: 3px solid #e9ecef;
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .structure-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        
-        .structure-caption {
-            margin-top: 15px;
-            color: #6c757d;
-            font-style: italic;
-        }
-        
-        /* Stats Cards */
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        
-        .stat-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-        }
-        
-        .stat-card:hover {
-            transform: translateY(-5px) scale(1.05);
-        }
-        
-        .stat-number {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin-bottom: 10px;
+  
         }
         
         .stat-label {
@@ -420,8 +361,117 @@
                 grid-template-columns: 1fr;
             }
         }
-    </style>
-</head>
+/* 🌙 Thème sombre et élégant */
+body {
+  background-color: #0f0f0f; /* fond sombre */
+  color: #f1f1f1; /* texte clair */
+  font-family: "Poppins", sans-serif;
+}
+
+.molecule-card {
+  background-color: #1b1b1b;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.molecule-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+}
+
+.molecule-name {
+  color: #00bcd4; /* bleu clair élégant */
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.search-container input {
+  width: 80%;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  background-color: #222;
+  border: 1px solid #555;
+  border-radius: 8px;
+  color: #fff;
+}
+   /* 🔧 Corrige les sections ADME et Head-to-Head pour le thème sombre */
+section, .adme-section, .headtohead-section {
+  background-color: #121212 !important;
+  color: #f1f1f1 !important;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+section h2, section h3 {
+  color: #00bcd4; /* jolis titres bleus pour garder le style élégant */
+}
+/* 🌑 Corrige les cadres de la section ADME */
+.adme-card, .adme-box, .adme-item {
+  background-color: #1e1e1e !important; /* fond sombre */
+  color: #f1f1f1 !important; /* texte clair */
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+/* pour être sûr que tout texte dans les cadres reste bien visible */
+.adme-card p, .adme-card span, .adme-card div {
+  color: #f1f1f1 !important;
+} 
+/* 💡 Effet néon sur les titres et noms de molécules */
+h1, h2, h3, .molecule-name {
+  color: #00fff7; /* couleur principale du néon (bleu turquoise) */
+  text-shadow:
+    0 0 5px #00fff7,
+    0 0 10px #00fff7,
+    0 0 20px #00fff7,
+    0 0 40px #00fff7;
+  transition: all 0.3s ease;
+}
+
+/* 🌈 Quand on passe la souris, la lueur devient plus forte */
+h1:hover, h2:hover, h3:hover, .molecule-name:hover {
+  text-shadow:
+    0 0 10px #00fff7,
+    0 0 20px #00fff7,
+    0 0 40px #00fff7,
+    0 0 80px #00fff7;
+}
+
+/* ✨ Optionnel : légère animation continue du néon */
+@keyframes neonPulse {
+  0% { text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7; }
+  50% { text-shadow: 0 0 15px #00fff7, 0 0 30px #00fff7, 0 0 60px #00fff7; }
+  100% { text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7; }
+}
+
+.molecule-name {
+  animation: neonPulse 2s infinite alternate;
+}
+/* 🌑 Fond sombre du haut du site (titre ou header) */
+header, .site-header, .title-section {
+  background-color: #000 !important; /* noir profond */
+  color: #00fff7; /* texte néon */
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #00fff7; /* petite lueur élégante en bas */
+}
+/* Améliorer la lisibilité dans les cadres */
+.molecule-card p {
+  color: #e0e0e0; /* gris clair lisible */
+  font-weight: 500; /* texte un peu plus épais */
+  text-shadow: 0 0 5px #000; /* léger contour pour que ça ressorte */
+
+}
+</style>
 <body>
     <div class="container">
         <!-- Header avec Logo Principal -->
@@ -438,6 +488,7 @@
                     </div>
                     <div>
                         <h1>PharmaCancerRevolution</h1>
+
                         <p class="subtitle">Next-Generation Prostate Cancer Therapeutics</p>
                     </div>
                 </div>
@@ -487,25 +538,74 @@
         </section>
 
         <!-- Section d'affichage des structures moléculaires -->
-        <section class="structures-showcase" id="structures">
+       
             <h2>🧬 Molecular Structures of Leading Therapeutics</h2>
-            <div class="structure-image-container">
-                <img src="logo_and_structures.svg" alt="Molecular Structures of Prostate Cancer Drugs" class="structure-image">
-                <p class="structure-caption">
-                    Interactive molecular structures of Enzalutamide, Darolutamide, Abiraterone, Olaparib, and Lu-177-PSMA-617<br>
-                    <em>Hover over structures for detailed chemical information</em>
-                </p>
-            </div>
-        </section>
 
-        <!-- Top Molecules -->
-        <h2 id="molecules" style="color: white; margin: 30px 0 20px; text-align: center; font-size: 2em;">
-            🏆 Top 5 Therapeutic Agents
-        </h2>
-        
-        <div class="molecules">
-            <!-- Darolutamide - #1 -->
-            <div class="molecule-card featured">
+            <div class="molecule-card">
+  <div class="molecule-name">Enzalutamide</div>
+  <p>CHEMBL: CHEMBL1261870</p>
+  <p>AR Antagonist | IC₅₀: 136 nM</p>
+</div>
+  <div class="structure-image-container">
+        <img src="https://www.researchgate.net/profile/Dharmendra-Prajapati/publication/335270771/figure/fig1/AS:798358251514880@1566403120327/Chemical-structure-of-enzalutamide.png" alt="Enzalutamide" class="structure-image">
+        <div class="structure-caption">Enzalutamide (MDV3100)</div>
+    </div>
+<div class="molecule-card">
+  <div class="molecule-name">Darolutamide</div>
+  <p>CHEMBL: CHEMBL3707346</p>
+  <p>AR Blocker | No BBB penetration</p>
+</div>
+  <div class="structure-image-container">
+        <img src="https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/CID/67171867/PNG" alt="Darolutamide" class="structure-image">
+        <div class="structure-caption">Darolutamide (ODM-201)</div>
+    </div>
+
+<div class="molecule-card">
+  <div class="molecule-name">Abiraterone</div>
+  <p>CHEMBL: CHEMBL1200920</p>
+  <p>CYP17A1 Inhibitor | Blocks Androgen synthesis</p>
+<div class="structure-image-container">
+    <img src="https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/CID/148124/PNG" 
+         alt="Abiraterone" class="structure-image">
+    <div class="structure-caption">Abiraterone</div>
+</div>
+<div class="molecule-card">
+  <div class="molecule-name">Olaparib</div>
+  <p>CHEMBL: CHEMBL5278686</p>
+  <p>PARP Inhibitor | DNA Repair Blocker</p>
+</div>
+ <div class="structure-image-container">
+        <img src="https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/CID/23725625/PNG" alt="Olaparib" class="structure-image">
+        <div class="structure-caption">Olaparib</div>
+    </div>
+
+<div class="molecule-card">
+  <div class="molecule-name">Lu-177-PSMA-617</div>
+  <p>Radioligand Therapy | Targets PSMA in Prostate Cancer</p>
+</div>
+<div class="structure-image-container">
+    <img src="https://www.researchgate.net/profile/Matthias-Eder/publication/364614486/figure/fig3/AS:1132499561600000@1668472156693/Chemical-structure-of-177LuLu-PSMA-617.png" alt="Lu-177-PSMA-617" class="structure-image">
+    <div class="structure-caption">Lu-177-PSMA-617</div>
+</div>
+    </div>
+</section>
+<!-- Darolutamide -->
+<div class="molecule-card">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes molécules</title>
+    <style>
+        .structure-image {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+   
                 <h3>
                     Darolutamide (ODM-201)
                     <span class="badge">RANK #1</span>
@@ -736,5 +836,7 @@
             observer.observe(card);
         });
     </script>
+<p>Author: Yasmine Benammar</p>
+
 </body>
 </html>
